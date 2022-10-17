@@ -9,3 +9,6 @@ let teacher = {
 };
 teacher.__proto__=student;
  console.log(teacher);
+
+
+ 

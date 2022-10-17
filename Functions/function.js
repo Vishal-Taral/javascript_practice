@@ -1,16 +1,16 @@
 // performing action on button of the website 
-var fname = "vishal";
+var firstName = "vishal";
 function check() {
-    var fname = "rahul";
+    var firstName = "rahul";
 
-    let name = "hello" + " " + fname;
+    let name = "hello" + " " + firstName;
     console.log(name);
 
 }
 check(); //if we are performing task on a button of website then not need of function call
 
 let sum = function (a, b) {
-    return  a + b;
+    return a + b;
 };
 
 sum(4, 5);
@@ -57,29 +57,27 @@ ask(
 
 // console.log("vishal"); console.log("rohan");     statememnts with delimited
 
-describe("pow", function() {
+describe("pow", function () {
 
-    it("raises to n-th power", function() {
-      assert.equal(pow(2, 3), 8);
+    it("raises to n-th power", function () {
+        assert.equal(pow(2, 3), 8);
     });
-  
-  });
-  describe();
 
-  
-  let now = new Date();
-  console.log(now);
+});
+describe();  // Can't understand
 
 
-  let ages = [10,20,30,5];
-  console.log(ages+"<br><br>");
+let now = new Date();
+console.log(now);
 
-  let b = ages.filter(chechAdult)
-  console.log(b);
+let ages = [10, 20, 30, 5];
+console.log(ages + "<br><br>");
 
-  function chechAdult(age) {
+let b = ages.filter(chechAdult)
+console.log(b);
+
+function chechAdult(age) {
     return age >= 18;
     //console.log(age);
-    
-    
-  }
+}
+
