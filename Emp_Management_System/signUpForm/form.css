@@ -1,0 +1,22 @@
+.main{
+    height: 720px;
+    width: 100%;
+    background-color: yellowgreen;
+    /* background-image: linear-gradient(); */
+    /* background-image: linear-gradient(yellow,lightgreen); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text{
+    color:whitesmoke;
+    
+}
+.row{
+    margin-top: 7px;
+}
+.container{
+    margin-left: 350px;
+}
+

@@ -1,0 +1,24 @@
+{
+  "company_detail":{
+    "id":"ID-1",
+    "name":"Polygloft",
+    "location":"katraj"
+  },
+  "employee_detail":[
+    {
+      "id":"emp_01",
+      "name":"vishal taral",
+      "position":"Java-Developer"
+    },
+    {
+      "id":"emp_02",
+      "name":"Rohan Odel",
+      "position":"react-Developer"
+    },
+    {
+      "id":"emp_01",
+      "name":"rahul Gadhe",
+      "position":"Java-Developer"
+    }
+  ]
+}
