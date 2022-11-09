@@ -135,7 +135,16 @@ let str = "Vishal Taral";
 console.log(str.split(""));
 console.log(str.from);
 
+/* in javascript multidimentional array is not directly provided we use either array literal 
+or one more array coping in a single variable that works as a multidimentional array exaples 
+are following */
 
+let arr1 =[1,2,3,4];
+let arr2 =[5,6,7,8];
+let arr3 =["vishal", "patil"];
 
+let wholeArray = [arr1,arr2,arr3];
+console.log(wholeArray);
+console.log(wholeArray[2][1]);
 
 

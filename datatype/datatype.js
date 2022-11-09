@@ -3,11 +3,11 @@ let myName = "vishal";
 console.log("developer ", ` ${myName}`);
 console.log(`developer ,  ${myName}`);
 
-alert(`the result is ${1 + 2}`);                               // the result is 3 
-alert("the result is ${1 + 2}");                               //the result is ${1 + 2}
+// alert(`the result is ${1 + 2}`);                               // the result is 3 
+// alert("the result is ${1 + 2}");                               //the result is ${1 + 2}
 
 console.log(9007199254740991 + 1 + 3)
-console.log(typeof (alert));
+// console.log(typeof (alert));
 
 // boolean datatype
 
@@ -94,3 +94,33 @@ let qw = 5;
 let er = " very great number";
 let name = "vishal";
 console.log(`${qw + 5} in the world ${er} for ${name}`);
+
+//multiline Strings 
+let books ="books: \n  \t js book \n \t c language book \n \t java book "
+console.log(books);
+
+// alert("hello".includes("bye"));
+ let str1 = "vishalSanjay Taral";
+ console.log(str1.substring(3, str1.length));
+ console.log(str1.substr(3,3))
+ console.log(String.fromCodePoint(90));
+ console.log(String.fromCharCode(90));
+
+ let user = {
+    name : "vishal ",
+    surname : "taral",
+ };
+let user1 = {
+    city : "sambaji nagar" ,
+    didi : "jhgsda",
+
+};
+
+user1.__proto__ = user;
+console.log(user1.name);
+
+let {firstName= "vishal", gender="male"}=person;
+
+let arr= [2,4,"vishal","patil"];
+console.log(arr.find(ele => ele%2 == 0));
+

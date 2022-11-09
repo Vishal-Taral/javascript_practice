@@ -88,6 +88,17 @@ let addition = () => {
 }
 console.log(addition());
 
-const pre = 2020;
-pre = 399;
+// const pre = 2020;
+// pre = 399;
 //console.log(pre);
+
+function mul(...numbers){
+    let mul = 0;
+    for (let num of numbers){
+        mul = mul * num;
+    }
+    return mul;
+
+}
+
+console.log(mul(1,2,3,4,5,65));
