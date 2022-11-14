@@ -1,13 +1,26 @@
-let xyz =document.getElementById('one');
-console.log(xyz);
-xyz.style.color="blue"
+"use strict"
+let a = document.getElementById('first');
+let newDivInsideFirstDiv = document.createElement('div');
+newDivInsideFirstDiv.id = "newOne";
+newDivInsideFirstDiv.innerHTML = "CLICK HERE";
+newDivInsideFirstDiv.style = "color:white; background-color: darkcyan; height:50px; width:300px; display:flex; align-items: center;justify-content: center; border:2px solid black;border-radius:5px; "
+a.append(newDivInsideFirstDiv);
 
-console.log( document.body.constructor.name );
-console.log( document.body instanceof HTMLBodyElement );
-console.log(elem);
 
-let text = document.body.firstChild;
-    alert(text.data); // Hello
+// Code to give and print input from user
 
-    let comment = text.nextSibling;
-    alert(comment.data); // Comment
+newDivInsideFirstDiv.addEventListener(`click`, printSomething);
+
+let arr = [];
+function printSomething() {
+    arr.push(prompt("write Something"));
+
+    let list = document.getElementById('second');
+    arr.forEach(() => {
+        let li = document.createElement("li");
+        li.innerText = (arr);
+        li.style="background-color: darkseagreen; width: 200px; margin-top:0.5rem"
+        list.appendChild(li);
+    });
+    arr.pop();
+}
