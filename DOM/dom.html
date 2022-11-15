@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>DOM </title>
     <link rel="stylesheet" href="dom.css">
-    
+
 </head>
 
 <body>
 
     <div id="main">
-        <div id="first"></div>
-        <div class="second1">
-            <ul id="second">
-                
-            </ul>
+        
+        <div id="sub">
+            <div id="first"></div>
+
+            <div id="search-box">
+                <input id="search-input" type="text" placeholder="search here ">
+                <button>
+                    <i class="fa fa-search" style="font-size:10px;"></i>
+                </button>
+            </div>
+
+            <div class="second1">
+                <ol id="second">
+
+                </ol>
+            </div>
         </div>
-        <div id="input">
-            <input type="text" placeholder="search here ">
-            <button>
-                <i class="fa-solid fa-magnifying-glass icon"></i>
-            </button>
-        </div>
+
     </div>
 
     <script src="./dom.js"></script>
