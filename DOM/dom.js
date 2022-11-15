@@ -11,14 +11,16 @@ let arr = [];
 
 //function to give input from dialogue box and print 
 function printSomething() {
-    arr.push(prompt("write Something"));
+    let a = prompt("write Something")
+    arr.push(a);
     let list = document.getElementById('second');
     arr.forEach(() => {
         let li = document.createElement("li");
         li.className = 'list-group';
-        li.innerText = (arr.pop());
+        li.innerText = (arr);
         li.style = "background-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between; "
         list.appendChild(li);
+        arr.pop();
 
         //cross mark crated in following code 
         let a = document.createElement('a');
@@ -28,6 +30,9 @@ function printSomething() {
         a.addEventListener('click', removeChild)
         li.appendChild(a)
 
+        // if (arr.length == 0 ) {
+        //    document.getElementById('second').innerHTML = "Please enter Your name...";
+        // }
 
     });
 
@@ -51,9 +56,9 @@ function printSomething() {
 
         listItems.forEach((item => {
             let text = item.textContent;
-            if (text.toLocaleLowerCase().includes(filter.toLowerCase())) {
+            if (text.toLowerCase().includes(filter.toLowerCase())) {
                 item.style.display = '';
-                // li.style = "backg;round-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between; ";
+                // li.style = "background-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between; ";
                 item.style = "backg;round-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between;";
             } else {
                 item.style.display = 'none';
