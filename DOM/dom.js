@@ -11,11 +11,17 @@ let arr = [];
 
 //function to give input from dialogue box and print 
 function printSomething() {
-    let a = prompt("write Something")
-    arr.push(a);
+    let a = prompt("write Something");
+    
+    if(a == ""){
+        document.getElementById('second').innerHTML = "Please enter Your name...";
+    }else {
+        arr.push(a);
+    }
+    
     let list = document.getElementById('second');
     arr.forEach(() => {
-        let li = document.createElement("li");
+        var li = document.createElement("li");
         li.className = 'list-group';
         li.innerText = (arr);
         li.style = "background-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between; "
@@ -27,12 +33,8 @@ function printSomething() {
         a.id = 'cross';
         a.textContent = 'x';
         a.style = " background-color: aqua; width:20px; text-align:center; border-left:1px solid";
-        a.addEventListener('click', removeChild)
-        li.appendChild(a)
-
-        // if (arr.length == 0 ) {
-        //    document.getElementById('second').innerHTML = "Please enter Your name...";
-        // }
+        a.addEventListener('click', removeChild);
+        li.appendChild(a);
 
     });
 
