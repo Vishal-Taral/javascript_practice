@@ -147,4 +147,10 @@ let wholeArray = [arr1,arr2,arr3];
 console.log(wholeArray);
 console.log(wholeArray[2][1]);
 
-
+let arr = new Array();
+console.log(Array.isArray(arr));
+if (!Array.isArray(arr)){
+    console.log("yes it's not array");
+}else {
+    console.log("its array bro..!  ");
+}

@@ -1,19 +1,26 @@
-// function accumulator(startingValue){
+// function sayhi(startingValue){
 //     this.value = startingValue;
 //     this.read = function(){
 //         this.value= prompt("enter a value");
 //     }
 // }
-// let accumulator1 = new accumulator()
-// accumulator.read();
-// console.log(accumulator1.read);
+// let sayhi = new accumulator()
+// sayhi.read();
+// console.log(sayhi.read);
 
+"use strict"
+let a = {
+    name: "vishal",
+    qualification : "bsc",
+    sayhi(){
+        let add  = 10 + 20;
+        console.log(add);
+        console.log(this);   // it refering to the window object
+        console.log(this.name);
+    }
+};  
+a.sayhi();
 
-let user = {
-    address:'mumbai',
-}; // user has no address
-
-alert( user?.[address] ); 
-
-
+// arraow function have no this 
+let 
 

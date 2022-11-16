@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+
+    <script>
+        function sum() {
+            let a = 10;
+
+            function inner() {
+                var b = 20; 
+            }
+
+            function inner1() {
+                    console.log(a);
+                }
+                return inner1;
+        }
+        let fun = sum();
+        fun();
+        name();   // it's hoisting name function declared after calling 
+        function name(){
+            let firstName = 'vishal';
+            let lastName = 'taral';
+
+            function fullName(){
+                return firstName +" " +lastName;
+            }
+            console.log(fullName());
+        }
+        
+        let Name = name;
+
+        console.log(aa);
+        var aa = 40;
+        
+
+    </script>
+</body>
+
+</html>

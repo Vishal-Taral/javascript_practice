@@ -12,16 +12,22 @@ let arr = [];
 //function to give input from dialogue box and print 
 function printSomething() {
     let a = prompt("write Something");
-    
-    if(a == ""){
-        document.getElementById('second').innerHTML = "Please enter Your name...";
+        
+    if(a === ""){
+        let massage = document.createElement("li");
+        massage.id = "msg";
+        massage = document.getElementById('second').innerHTML="please enter your name...";
+        
     }else {
+    
         arr.push(a);
     }
+
+
     
     let list = document.getElementById('second');
     arr.forEach(() => {
-        var li = document.createElement("li");
+        let li = document.createElement("li");
         li.className = 'list-group';
         li.innerText = (arr);
         li.style = "background-color: whitesmoke; width: 20%; margin-top:0.5rem; border:1px solid black; display:flex; justify-content: space-between; "
@@ -42,6 +48,8 @@ function printSomething() {
 
     document.getElementById('search-box').addEventListener('input', filterList)
 
+
+
     function removeChild(e) {
         let li = e.target.parentNode;
         list.removeChild(li);
@@ -51,6 +59,7 @@ function printSomething() {
 
     document.querySelector('#search-input').addEventListener('input', filterList);
 
+    
     function filterList() {
         const serachInput = document.querySelector('#search-input');
         const filter = serachInput.value.toLowerCase();
