@@ -9,19 +9,65 @@
 <body>
     <h1>JSON Methods</h1>
     <script>
-        let obj = {
-            number : 01,
-            empID :"polyglots123",
-            meeting:{
-                at : "polyglots",
-                in : "pune",
-            }
-        }
-        let stringObject = JSON.stringify(obj);
-        console.log(stringObject);
-        console.log(obj);
+//         let obj = {
+//             number : 01,
+//             empID :"polyglots123",
+//             meeting:{
+//                 at : "polyglots",
+//                 in : "pune",
+//             }
+//         }
+//         let stringObject = JSON.stringify(obj);
+//         console.log(stringObject);
+//         console.log(obj);
 
+//         let obj1 ={
+//             title :"polyglots",
+//             hello(){
+//                 alert("rohanbhai");
+//             }
+           
+//         }
+//         console.log(JSON.stringify(obj1));
         
+
+//         let room = {
+//   number: 23
+// };
+
+
+
+// let meetup = {
+//   title: "Conference",
+//   participants: [{name: "John"}, {name: "Alice"}],
+//   place: room ,
+// };
+
+// room.occupiedBy = meetup; 
+
+// console.log( JSON.stringify(meetup, ['title', 'participants', 'place', 'name', 'number']) );
+
+let company ={
+    Id : 01,
+    coname:"polyglots",
+};
+
+let client ={
+    clientname : "zylone"
+}
+
+company.occupy = client ;
+
+console.log(JSON.stringify(client, function replacer(key, value){
+    console.log(`${key} : ${value}`);
+    return (key == 'clientname') ? null : value;
+}));
+
+let arr =  '{"name" : "vishal", "city": "aurangabad"}';
+let arr1=JSON.parse(arr);
+console.log(arr1);
+
+
     </script>
 </body>
 </html>
