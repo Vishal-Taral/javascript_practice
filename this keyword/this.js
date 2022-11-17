@@ -38,3 +38,9 @@ calculator.read();
 console.log( calculator.sum() );
 console.log( calculator.mul() );
 
+function user(name){
+    this = {}; // implicitely add this
+
+    // add property to this
+    
+}
