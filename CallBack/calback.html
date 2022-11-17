@@ -9,15 +9,14 @@
 <body>
     <h1>Call Back Function</h1>
     <script>
-        function friend1() {
-            console.log("I am busy for now i'll call back to you");
+        let one = (friendName) =>{
+            console.log("i can't talk naw");
         }
 
-        function me(a,b,...myCall){
-            let sum = a + b;
-            myCall(sum)
-        }
-        me(2,4,friend1);
+        let two = () =>{
+            console.log("i calling you");
+        } 
+        two();
     </script>
 </body>
 </html>

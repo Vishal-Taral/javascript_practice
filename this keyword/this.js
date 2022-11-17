@@ -1,12 +1,10 @@
-// function sayhi(startingValue){
+//function sayBi(startingValue){
 //     this.value = startingValue;
 //     this.read = function(){
 //         this.value= prompt("enter a value");
 //     }
 // }
-// let sayhi = new accumulator()
-// sayhi.read();
-// console.log(sayhi.read);
+// sayBi('vishal');
 
 "use strict"
 let a = {
@@ -21,6 +19,22 @@ let a = {
 };  
 a.sayhi();
 
-// arraow function have no this 
-let 
+let calculator = {
+    sum() {
+        return this . a + this .b;
+    },
+
+    mul() {
+        return this.a * this.b;
+    },
+
+    read() {
+        this.a = +prompt('a');
+        this.b = +prompt('b');
+    }
+};
+
+calculator.read();
+console.log( calculator.sum() );
+console.log( calculator.mul() );
 

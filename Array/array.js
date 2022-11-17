@@ -154,3 +154,10 @@ if (!Array.isArray(arr)){
 }else {
     console.log("its array bro..!  ");
 }
+// array destructuring
+
+let [name,...city]=["vishal","aurangabad","jalgaon","beed","nagar"];
+console.log(name,city);
+
+//object destructuring
+
