@@ -16,3 +16,4 @@ let userDetail = {
 }
 printDetail();
 console.log(userDetail);
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Set</title>
+</head>
+
+<body>
+    <h1>Getter And Setter</h1>
+
+    <script>
+        let stud = {
+            fName: "vishal",
+            lName: "taral",
+
+            get fullname() {
+                return `${this.fName} ${this.lName}`;
+            },
+
+            set fullname(value) {
+                [this.fName, this.lName] = value.split(" ");
+            },
+        }
+        console.log(stud.fullname);
+
+        // Smarter Getter
+
+        let user = {
+            get name() {
+                return this._name;
+            },
+
+            set name(value) {
+                if (value.length < 4) {
+                    console.log("Name is too short, need at least 4 characters");
+                    return;
+                }
+                this._name = value;
+            }
+        };
+
+        user.name = "ro"; 
+        user.name = "rohan";
+        console.log(user.name); 
+
+        let date = new Date();
+        console.log(date);
+        
+    </script>
+</body>
+
+</html>

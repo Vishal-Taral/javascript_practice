@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Flag</title>
+</head>
+
+<body>
+    <h1>property Flag</h1>
+
+    <script>
+        // let user = {
+        //     name: "vishal"
+        // };
+
+        // Object.defineProperty(user, "name", {
+        //     writable: false
+        // });
+
+        // user.name = "patil";
+
+        let user1 = {
+            name: "John",
+            toString() {
+                return this.name;
+            }
+        };
+
+        Object.defineProperty(user1 , "name" ,{
+            enumerable : false
+        });
+
+        // By default, both our properties are listed:
+        for (let key in user1) console.log(key);
+
+    </script>
+</body>
+
+</html>
