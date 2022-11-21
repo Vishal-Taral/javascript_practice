@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy</title>
+</head>
+
+<body>
+    <h1>Proxy</h1>
+
+    <script>
+        // let employee = {
+        //     id : 01,
+        // };
+        // let proxy = new Proxy(employee, {});
+
+        // proxy.test = 5;
+        // console.log(employee.test);
+        // console.log(proxy.test);
+
+        // for (const key in proxy) {
+        //     console.log(key);
+        // }
+        // console.log(Object.values(employee));
+
+        // let person = {};
+        // console.log(Object.isExtensible(person)); //true
+        // person.name = "vishal";
+        // console.log(person.name);
+        // Object.preventExtensions(person);
+        // person.age = 23;
+        // console.log(person.age);    // undefined because now it is  Object.preventextensions     
+        /**********************/
+        const emp = {
+            name : "vishal",
+        };
+
+        Object.defineProperties(emp,{
+            fullname:{
+                value : "vishal sanjay taral",
+                writable : true
+            },
+            city :{
+                value : "aurangabad",
+            },
+            age : {
+                value : 23,
+            }
+        });
+
+        console.log(`${emp.fullname} from ${emp.city} AND his age is ${emp.age}`);
+        console.log(Object.getOwnPropertyNames(emp)); 
+
+        const heading = document.querySelector("h1");
+        heading.textContent="Hello World"
+    </script>
+</body>
+
+</html>
+
