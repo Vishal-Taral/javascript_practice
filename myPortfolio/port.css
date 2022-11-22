@@ -40,14 +40,18 @@
 }
 #main #footer {
   display: flex;
-  justify-content: space-between;
+  padding-top: 3rem;
+  padding-left: 3rem;
 }
 #main #footer .self-img {
-  width: 50%;
-  height: 90vh;
-  margin-left: 100px;
+  width: 25%;
+  height: 80vh;
+  border-radius: 50%;
 }
-#main #footer .logo {
-  width: 20%;
-  height: 20%;
+#main #footer .basic-info {
+  margin-left: 10%;
+  color: white;
+}
+#main #footer .name-heading {
+  font-size: 50px;
 }/*# sourceMappingURL=port.css.map */

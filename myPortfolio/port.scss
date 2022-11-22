@@ -10,14 +10,14 @@ $color :red;
     @include background(black, 100%, 100vh);
 
     #header {
-        
+
         #navbar {
             @include background(rgb(80, 80, 165), 100%, 10vh);
             color: white;
             display: flex;
 
             .logo {
-                @include logo(10%,60px);
+                @include logo(10%, 60px);
                 margin: 0.2rem;
                 margin-left: 2rem;
             }
@@ -50,18 +50,23 @@ $color :red;
 
 
     }
-    #footer{
+
+    #footer {
         display: flex;
-        justify-content: space-between;
-        .self-img{
-            @include logo(50%, 90vh);
-            margin-left: 100px;
+        padding-top: 3rem;
+        padding-left: 3rem;
+
+        .self-img {
+            @include logo(25%, 80vh);
+            border-radius: 50%;
+        }
+        .basic-info{
+            margin-left: 10%;
+            color: white;
         }
 
-        .logo{
-            @include logo(20%, 20%);
-
-            
+        .name-heading {
+            font-size: 50px;          
         }
     }
 }
