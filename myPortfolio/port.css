@@ -1,8 +1,53 @@
-.main {
-  color: red;
-  display: flex;
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+#main {
   background-color: black;
-  color: whitesmoke;
   width: 100%;
   height: 100vh;
+}
+#main #header #navbar {
+  background-color: rgb(80, 80, 165);
+  width: 100%;
+  height: 10vh;
+  color: white;
+  display: flex;
+}
+#main #header #navbar .logo {
+  width: 10%;
+  height: 60px;
+  margin: 0.2rem;
+  margin-left: 2rem;
+}
+#main #header #navbar .nav-item {
+  display: flex;
+  margin-left: 4rem;
+  padding-top: 1.5rem;
+  color: white;
+  list-style-type: none;
+}
+#main #header #navbar .nav-item .link {
+  color: white;
+  text-decoration: none;
+}
+#main #header #navbar .nav-item .link:hover {
+  border-bottom: 2px solid red;
+}
+#main #header #navbar .nav-item .list {
+  margin-left: 3rem;
+}
+#main #footer {
+  display: flex;
+  justify-content: space-between;
+}
+#main #footer .self-img {
+  width: 50%;
+  height: 90vh;
+  margin-left: 100px;
+}
+#main #footer .logo {
+  width: 20%;
+  height: 20%;
 }/*# sourceMappingURL=port.css.map */
